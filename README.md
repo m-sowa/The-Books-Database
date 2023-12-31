@@ -6,19 +6,19 @@ The database was created using PostgreSQL version 16.1.
 
 ## Schema
 The database consists of seven tables, organised as shown in the schema below:
-1. *book* - table with data about books;
-1. *author* - table with data about book authors;
-1. *book_author* - junction table connecting book and author tables;
-1. *genre* - table with a list of book genres;
-1. *book_genre* - junction table connecting book and genre tables;
-1. *series* - table with series to which the books belong;
-1. *book_series* - junction table connecting book and series tables.
+1. ***book*** - table with data about books;
+1. ***author*** - table with data about book authors;
+1. ***book_author*** - junction table connecting book and author tables;
+1. ***genre*** - table with a list of book genres;
+1. ***book_genre*** - junction table connecting book and genre tables;
+1. ***series*** - table with series to which the books belong;
+1. ***book_series*** - junction table connecting book and series tables.
 
 ## Assumptions
 My assumptions when designing the database were as follows:
-* book-author: there can be a book without any author, but there is no author without at least one book;
-* book-genre: each book has at least one genre and there is no genre which is not assigned to any book;
-* book-series: there can be a book not belonging to any series, but there is no series without a book assigned to it.
+* *book - author*: there can be a book without any author, but there is no author without at least one book;
+* *book - genre*: each book has at least one genre and there is no genre which is not assigned to any book;
+* *book - series*: there can be a book not belonging to any series, but there is no series without a book assigned to it.
 
 Thus, the schema covers three types of relationships (marked using Crow's foot notation):
 * one mandatory to many optional;
