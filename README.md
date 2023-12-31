@@ -1,4 +1,4 @@
-# The-Books-Database
+# The Books Database
 
 :books: Since I love reading, I created my own database books_db, which serves as a collection of data about books that I am reading, planning to read, or have read. 
 
