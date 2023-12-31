@@ -51,54 +51,54 @@ I have been using the books_db database to practice writing different types SQL 
 ## Queries
 Here's a list of sample queries created so far:
 
-DDL statements:
-Create a database called “books_db”.
-Create a table named “book” with columns as per the attached schema.
-Create a table named “author” with columns as per the attached schema.
-Create a junction table named “book_author” with columns as per the attached schema.
-Create a table named “genre” with columns as per the attached schema.
-Create a junction table named “book_genre” with columns as per the attached schema.
-Create a table named “series” with columns as per the attached schema.
-Create a junction table named “book_series” with columns as per the attached schema.
-In table “book”, rename column  “title_other” to “title_orig”.
-In table “book”, remove the NOT NULL constraint from column “isbn”.
-In table “book”, change the data type of column “language” from VARCHAR(50) to VARCHAR(10).
-Drop the “series” table.
-In table “author”, remove the column “country”.
-In table “author”, add column “country” (type VARCHAR(50), no constraints).
+### DDL statements:
+1. Create a database called “books_db”.
+1. Create a table named “book” with columns as per the attached schema.
+1. Create a table named “author” with columns as per the attached schema.
+1. Create a junction table named “book_author” with columns as per the attached schema.
+1. Create a table named “genre” with columns as per the attached schema.
+1. Create a junction table named “book_genre” with columns as per the attached schema.
+1. Create a table named “series” with columns as per the attached schema.
+1. Create a junction table named “book_series” with columns as per the attached schema.
+1. In table “book”, rename column  “title_other” to “title_orig”.
+1. In table “book”, remove the NOT NULL constraint from column “isbn”.
+1. In table “book”, change the data type of column “language” from VARCHAR(50) to VARCHAR(10).
+1. Drop the “series” table.
+1. In table “author”, remove the column “country”.
+1. In table “author”, add column “country” (type VARCHAR(50), no constraints).
 
-DML statements:
-Manually insert a new book and populate relevant tables with the information given.
-Delete duplicate authors (by name and country) using a self-join.
-Delete duplicate authors (by name and country) using a window function.
-Update the length (pages) of the book “Robinson Crusoe” from 304 to 305.
+### DML statements:
+1. Manually insert a new book and populate relevant tables with the information given.
+1. Delete duplicate authors (by name and country) using a self-join.
+1. Delete duplicate authors (by name and country) using a window function.
+1. Update the length (pages) of the book “Robinson Crusoe” from 304 to 305.
 
-DQL statements:
-Get a book by title – fetch related information from all tables.
-Get all books by a given author.
-Get all books by a given genre.
-Get all books from a given series.
-Get all books by living authors (ordered from oldest to youngest).
-Get the total number of pages read (finished books only).
-Get the number of books read in English and in Polish.
-Get the book with most pages by language (excluding the Bible with id 31).
-Get the average number of pages by genre (excluding the Bible with id 31).
-Get the ages of the authors and information if author is living or deceased.
-Get the highest and lowest age from among living and deceased authors.
-Get the number of books by the country of origin of their authors.
-Get the number of books by genre (note: each book is assigned to more than 1 genre).
-Get the top 2 most common genres and their count, excluding 'fiction' and 'non-fiction'.
-Get the year of the oldest and most recently published book for each publisher. Exclude cases when “oldest” and “most recent” would be the same year. 
-Get the title of the oldest and most recently published book for each publisher. For publishers with a single book, show only that book.
-Get the titles of books longest than the average length of all the books in the database (without showing the average).
-Get the titles of books longest than the average length of all the books in the database (show the average as well).
-Get the titles of all books – show the original title (title_orig) if available; if not, show the translated title (title).
-Get the longest and shortest book per language (PL and EN).
-Get the earliest and latest born author from each country (include only countries with more than 1 author).
-Compare the length of each book against the average length for each genre. Show if a book is “shorter”, “longer” or “same”. Show the difference in length between the book and the genre average.
-Get the titles of books ordered by book length (descending), together with next by length and difference between the two.
-Get books published between the years 2000 and 2015 (inclusive).
-Get the number of books with 10-digit and 13-digit ISBN (excluding books without ISBN).
-Get the titles of books from series, together with series titles (combined in one column).
-Get the upper-cased author name and book title (combined in one column).
-Get a list of all book titles joined with all series titles in one column.
+### DQL statements:
+1. Get a book by title – fetch related information from all tables.
+1. Get all books by a given author.
+1. Get all books by a given genre.
+1. Get all books from a given series.
+1. Get all books by living authors (ordered from oldest to youngest).
+1. Get the total number of pages read (finished books only).
+1. Get the number of books read in English and in Polish.
+1. Get the book with most pages by language (excluding the Bible with id 31).
+1. Get the average number of pages by genre (excluding the Bible with id 31).
+1. Get the ages of the authors and information if author is living or deceased.
+1. Get the highest and lowest age from among living and deceased authors.
+1. Get the number of books by the country of origin of their authors.
+1. Get the number of books by genre (note: each book is assigned to more than 1 genre).
+1. Get the top 2 most common genres and their count, excluding 'fiction' and 'non-fiction'.
+1. Get the year of the oldest and most recently published book for each publisher. Exclude cases when “oldest” and “most recent” would be the same year. 
+1. Get the title of the oldest and most recently published book for each publisher. For publishers with a single book, show only that book.
+1. Get the titles of books longest than the average length of all the books in the database (without showing the average).
+1. Get the titles of books longest than the average length of all the books in the database (show the average as well).
+1. Get the titles of all books – show the original title (title_orig) if available; if not, show the translated title (title).
+1. Get the longest and shortest book per language (PL and EN).
+1. Get the earliest and latest born author from each country (include only countries with more than 1 author).
+1. Compare the length of each book against the average length for each genre. Show if a book is “shorter”, “longer” or “same”. Show the difference in length between the book and the genre average.
+1. Get the titles of books ordered by book length (descending), together with next by length and difference between the two.
+1. Get books published between the years 2000 and 2015 (inclusive).
+1. Get the number of books with 10-digit and 13-digit ISBN (excluding books without ISBN).
+1. Get the titles of books from series, together with series titles (combined in one column).
+1. Get the upper-cased author name and book title (combined in one column).
+1. Get a list of all book titles joined with all series titles in one column.
