@@ -2,7 +2,7 @@
 
 Since I love reading, I created my own database books_db, which serves as a collection of data about books that I am reading, planning to read, or have read. 
 
-The database was created using PostgreSQL version 16.1.
+The database was created using **PostgreSQL** version 16.1.
 
 ## Schema
 The database consists of seven tables, organised as shown in the schema below:
@@ -20,33 +20,33 @@ My assumptions when designing the database were as follows:
 * *book - genre*: each book has at least one genre and there is no genre which is not assigned to any book;
 * *book - series*: there can be a book not belonging to any series, but there is no series without a book assigned to it.
 
-Thus, the schema covers three types of relationships (marked using Crow's foot notation):
+Thus, the schema covers three types of **relationships** (marked using Crow's foot notation):
 * one mandatory to many optional;
 * one mandatory to many mandatory;
 * one mandatory to one optional.
 
 ## Skills practiced
 Here's what the books_db database has helped me practice so far:
-- designing a basic entity relationship diagram;
-- using DDL, DML, DQL statements for CRUD operations; 
-- creating and deleting a database;
-- creating, dropping, and altering a table;
-- modifying constraints on existing tables;
-- inserting data into tables manually and by importing a CSV file;
-- writing basic SQL queries to extract data;
-- using different types of operators: arithmetic, comparison, logical;
-- using different types of predicates, e.g. LIKE, (NOT) IN, (NOT) BETWEEN, IS (NOT) NULL;
-- filtering and sorting data using DISTINCT, WHERE, GROUP BY, HAVING, LIMIT;
-- using joins (inner, outer, self) and UNION;
-- using subqueries;
-- using CTE (WITH statement);
-- using aggregate functions: COUNT, SUM, AVG, MAX, MIN;
-- using scalar functions, e.g. ROUND, LENGTH, UPPER, CONCAT;
-- using date functions, e.g. CURRENT_DATE, DATE_PART;
-- using conditional functions, e.g. CASE, COALESCE;
-- using window functions, e.g. RANK, ROW_NUMBER, LEAD.
+- designing a basic **entity relationship diagram**;
+- using **DDL, DML, DQL** statements for **CRUD** operations; 
+- creating and deleting **a database**;
+- creating, dropping, and altering **a table**;
+- **modifying constraints** on existing tables;
+- **inserting data** into tables manually and by importing a CSV file;
+- writing **basic SQL queries** to extract data;
+- using different types of **operators**: arithmetic, comparison, logical;
+- using different types of **predicates**, e.g. LIKE, (NOT) IN, (NOT) BETWEEN, IS (NOT) NULL;
+- **filtering and sorting** data using DISTINCT, WHERE, GROUP BY, HAVING, LIMIT;
+- using **joins** (inner, outer, self) and UNION;
+- using **subqueries**;
+- using **CTE** (WITH statement);
+- using **aggregate functions**: COUNT, SUM, AVG, MAX, MIN;
+- using **scalar functions**, e.g. ROUND, LENGTH, UPPER, CONCAT;
+- using **date functions**, e.g. CURRENT_DATE, DATE_PART;
+- using **conditional functions**, e.g. CASE, COALESCE;
+- using **window functions**, e.g. RANK, ROW_NUMBER, LEAD.
 
-I have been using the books_db database to practice writing different types SQL queries. My scripts can be found in the folder attached to this project. I'm aware that most of the queries can be written in more than one way. Since I'm a beginner, I have not been attempting to choose the most optimal way to write the quesries. Rather, I created them alongside the learning process. 
+I have been using the books_db database to practice writing different types SQL queries. My scripts can be found in the folder attached to this project. I'm aware that most of the queries can be written in more than one way. Since I'm a beginner, _I have not been attempting to choose the most optimal way to write the queries_. Rather, I created them alongside the learning process. 
 
 ## Queries
 Here's a list of sample queries created so far:
