@@ -5,7 +5,7 @@
 The database was created using **PostgreSQL** version 16.1.
 
 ## Schema
-<img src="https://github.com/m-sowa/The-Books-Database/blob/master/books_db_schema.png" />
+<img src="https://github.com/m-sowa/The-Books-Database/blob/master/books_database.drawio.svg" width="700"/>
 
 :card_file_box: The database consists of seven tables, organised as shown in the schema above:
 1. ***book*** - table with data about books;
