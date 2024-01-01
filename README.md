@@ -1,11 +1,13 @@
-# The-Books-Database
+# The Books Database
 
 :books: Since I love reading, I created my own database books_db, which serves as a collection of data about books that I am reading, planning to read, or have read. 
 
 The database was created using **PostgreSQL** version 16.1.
 
 ## Schema
-:card_file_box: The database consists of seven tables, organised as shown in the schema below:
+<img src="https://github.com/m-sowa/The-Books-Database/blob/master/books_db_schema.png" />
+
+:card_file_box: The database consists of seven tables, organised as shown in the schema above:
 1. ***book*** - table with data about books;
 1. ***author*** - table with data about book authors;
 1. ***book_author*** - junction table connecting book and author tables;
